@@ -12,8 +12,10 @@ public class Table {
 
 
     public static void drawTable(GraphicsContext graphicsContext){
+        
         graphicsContext.setFill(Color.BLACK);
         for(int row = 0; row < rows;row++){
+            
             for(int column = 0; column < columns; column++){
                 graphicsContext.fillRect(row*fieldsize,column*fieldsize,Border.width,Border.width);
             }
