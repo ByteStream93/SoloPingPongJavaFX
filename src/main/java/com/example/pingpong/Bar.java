@@ -31,8 +31,11 @@ public class Bar {
     }
 
     public static void drawBar(GraphicsContext graphicsContext){
+        
         graphicsContext.setFill(Color.WHITE);
+        
         for(int i = 0; i<Main.gameBar.size();i++){
+            
             graphicsContext.fillRect(Main.gameBar.get(i).x_coordinate* Table.fieldsize,Main.gameBar.get(i).y_coordinate* Table.fieldsize,Table.fieldsize,Table.fieldsize);
         }
     }
