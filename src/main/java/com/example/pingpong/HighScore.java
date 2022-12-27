@@ -17,7 +17,9 @@ public class HighScore {
     }
 
     public static void drawingHighscore(GraphicsContext graphicsContext){
+        
         graphicsContext.setStroke(Color.WHITE);
+        
         graphicsContext.setFont(Font.font(20));
         graphicsContext.strokeText("Score: " + score, 60*Table.fieldsize,2*Table.fieldsize);
     }
